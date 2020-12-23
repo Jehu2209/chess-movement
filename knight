@@ -1,0 +1,25 @@
+# Chess Bot ??
+def Movement():
+
+    piece = input("Piece:")
+    x = int(input("x value:"))
+    y = int(input("y value:"))
+
+    if piece == "Knight":
+        if y > 2 and y < 7 and x > 2 and x < 7:
+            print("options are:")
+            # moving along the x axis
+            print("knight to:", x + 2,",", y + 1)
+            print("knight to:", x + 2,",", y - 1)
+            print("knight to:", x - 2,",", y - 1)
+            print("knight to:", x - 2,",", y + 1)
+            # moving along the y axis
+            print("knight to:", y + 2,",", x + 1)
+            print("knight to:", y + 2,",", x - 1)
+            print("knight to:", y - 2,",", x - 1)
+            print("knight to:", y - 2,",", x + 1)
+            selection = input("choice:")
+
+
+Movement()
+
